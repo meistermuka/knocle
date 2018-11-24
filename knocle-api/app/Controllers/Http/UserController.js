@@ -62,7 +62,7 @@ class UserController {
                 builder.with('favourites')
                 builder.with('replies')
             })
-            firstOrFail()
+            .firstOrFail()
 
         return response.json({
             status: 'success',

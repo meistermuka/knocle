@@ -1,25 +1,24 @@
 <template>
     <div class="ui message" :class="type">
         {{ message }}
-    </div>    
+    </div>
 </template>
 
 <script>
 export default {
-    name: 'Notification',
-    props: {
-        message: {
-            type: String,
-            required: true,
-        },
-        type: {
-            type: String,
-            required: true,
-        },
+  name: 'Notification',
+  props: {
+    message: {
+      type: String,
+      required: true
     },
-};
+    type: {
+      type: String,
+      required: true
+    }
+  }
+}
 </script>
 
 <style>
-
 </style>
